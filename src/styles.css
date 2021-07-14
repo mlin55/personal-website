@@ -1,0 +1,115 @@
+
+/* App */
+
+/*
+TO PUT IN SECTION HEADER CSS
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+*/
+
+.section-header-container {
+    min-height: 20rem;
+    max-height: 20rem;
+}
+
+.section-header-overlay {
+    width: 100%;
+    height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.project-tag {
+    margin-right: 0.5rem;
+}
+
+/*
+#projects * {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+*/
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-body {
+    width: 75%;
+}
+
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: 3.5rem;
+    width: 100%;
+    background-color: #95ddf3;
+}
+
+#navbar * {
+    display: inline;
+    margin-left: auto;
+}
+
+.navbar-btn a {
+    display: block;
+    padding: 1rem;
+    color: #344A53;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.navbar-btn a:hover {
+    background-color: #2490B2;
+}
+
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #95ddf3;
+    width: 100%;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    color: #344A53
+}
+
+
+
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+li {
+    font-size: 1.2rem;
+}
