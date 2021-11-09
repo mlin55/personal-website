@@ -4,6 +4,7 @@ import SectionHeader from './components/SectionHeader';
 import Footer from './components/Footer';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
+import SiteIcon from '@material-ui/icons/Public';
 import Chip from '@material-ui/core/Chip';
 
 import './styles.css';
@@ -11,7 +12,7 @@ import './styles.css';
 import guessthecityPic from './images/guessthecity.jpg';
 import rollSimPic from './images/TFT_rollSim_pic.jpg';
 import bonusbotPic from './images/Bonusbot_pic.jpg';
-import profilePic from './images/temp-profpic.png';
+import profilePic from './images/profpic.png';
 import aboutmeBkgrnd from './images/aboutme-background.png';
 import projectBkgrnd from './images/projects-background.jpeg';
 import resumeBkgrnd from './images/resume-background.jpeg';
@@ -19,18 +20,12 @@ import contactBkgrnd from './images/contact-background.webp';
 
 import resume from './Resume.pdf';
 
-
-
 function App() {
-
-  const handleClick = () => {
-
-  }
   
   return (
     <div className="App">
       <Navbar />
-      <body style={{margin: "auto", marginTop: "3.5rem"}}>
+      <div style={{margin: "auto", marginTop: "3.5rem"}}>
         <div className='section-header-container' style={{backgroundImage: `url(${aboutmeBkgrnd})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
           <div className='section-header-overlay'>
               <h1  style={{color: 'white', fontSize: '3rem'}}>Hey there! I'm Matthew.</h1>
@@ -52,7 +47,7 @@ function App() {
                   <li>React/Redux</li>
                 </ul>
               </div>
-              <img src={profilePic} style={{width: "10%", paddingLeft: "5rem", paddingRight: "2rem"}} alt='Pic of me' />
+              <img src={profilePic} style={{width: "25%", paddingLeft: "5rem", paddingRight: "2rem"}} alt='Pic of me' />
             </div>
           </div>
         </section>
@@ -62,18 +57,13 @@ function App() {
         />
         <section id='projects'>
           <div className='section-body'>
-            <div>
-              <h2>Guess the City</h2>
-              <div className='project'>
-                <div style={{width: "80%"}}>
-                  <p>A fullstack web-based quiz game. The player is shown pictures of city skylines and has to guess which city is being portrayed in each image, with a score assigned based on their accuracy. It also includes functionality to add new cities to the quiz, provided they have not already been added. I built it using the MERN (MongoDB, Express, React, Node) stack, and hosted the backend using Heroku and the frontend using Netlify.</p>
-                  <p><strong>Note:</strong> Because Heroku's free tier automatically hibernates the app after a set period of time, you will have to activate the server by clicking <a href='https://guess-the-city.herokuapp.com' target='_blank'>here</a> before using the live demo.</p>
-                  <a className='project-tag' href= 'https://github.com/mlin55/Guess-the-City' target='_blank'><Chip icon={<GitHubIcon />} color='primary' label='Github link' onClick={handleClick} /></a>
-                  <a className='project-tag' href='https://guess-the-city.netlify.app' target='_blank'><Chip color='primary' label='Live demo' onClick={handleClick} /></a>
-                </div>
-                <img style={{width: "20rem",height: "15rem", padding: "3rem"}} src={guessthecityPic} alt='Pic of project' />
-              </div>
-            </div>
+            <ProjectDisplay
+              title='Guess the City'
+              description='A fullstack web-based quiz game. The player is shown pictures of city skylines and has to guess which city is being portrayed in each image, with a score assigned based on their accuracy. It also includes functionality to add new cities to the quiz, provided they have not already been added. I built it using the MERN (MongoDB, Express, React, Node) stack, and hosted the backend using Heroku and the frontend using Netlify.'
+              githubLink='https://github.com/mlin55/guessthecity'
+              pic={guessthecityPic}
+              demoLink='https://guess-the-city.netlify.app'
+            />
             <ProjectDisplay 
               title='TFT Roll Simulator:'
               description='This was my first web application. It simulates the rolling mechanic in Teamfight Tactics, a popular strategy auto-chess game. Rolling quickly and efficiently is an integral aspect of the game, but players only have one or two opportunities in a 40-minute match to do so. The goal of this application is to provide an environment where players can frequently and efficiently practice rolling to improve their speed and accuracy in game. I used HTML, CSS, Javascript, and React to build this application, along with Photoshop and Audacity to generate the graphics and audio.'
@@ -111,7 +101,7 @@ function App() {
             </div>
           </div>
         </section>
-      </body>
+      </div>
       <Footer />
     </div>
   );
