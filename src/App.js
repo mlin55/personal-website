@@ -9,6 +9,7 @@ import Chip from '@material-ui/core/Chip';
 
 import './styles.css';
 
+import spotifyPic from './images/Spotify.jpeg';
 import guessthecityPic from './images/guessthecity.jpg';
 import rollSimPic from './images/TFT_rollSim_pic.jpg';
 import bonusbotPic from './images/Bonusbot_pic.jpg';
@@ -57,6 +58,13 @@ function App() {
         />
         <section id='projects'>
           <div className='section-body'>
+            <ProjectDisplay 
+              title='Spotify Recapped'
+              description="Uses the Spotify Web API to pull data about a user's top songs, artists, and genres from various time frames. Built using an Express backend and React frontend. The idea was inspired from Spotify Wrapped, an annual summary of your listening that Spotify provides. Since Spotify's developer apps only allow 25 unique users by default, it may not work if that quota has already been filled. An extension request has been sent and is currently pending approval."
+              githubLink='https://github.com/mlin55/Spotify-Recapped'
+              pic={spotifyPic}
+              demoLink='https://spotify-recapped.netlify.app'
+            />
             <ProjectDisplay
               title='Guess the City'
               description='A fullstack web-based quiz game. The player is shown pictures of city skylines and has to guess which city is being portrayed in each image, with a score assigned based on their accuracy. It also includes functionality to add new cities to the quiz, provided they have not already been added. I built it using the MERN (MongoDB, Express, React, Node) stack, and hosted the backend using Heroku and the frontend using Netlify.'

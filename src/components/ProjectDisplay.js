@@ -4,7 +4,7 @@ import Chip from '@material-ui/core/Chip';
 
 function ProjectDisplay({title, description, githubLink, pic, demoLink}) {
     const handleClick = () => {
-
+      
     }
 
     return(
