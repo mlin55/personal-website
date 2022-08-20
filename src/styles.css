@@ -1,115 +1,128 @@
-
 /* App */
 
-/*
-TO PUT IN SECTION HEADER CSS
-
-h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-}
-*/
-
-.section-header-container {
-    min-height: 20rem;
-    max-height: 20rem;
-}
-
-.section-header-overlay {
-    width: 100%;
-    height: 20rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.project {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.project-tag {
-    margin-right: 0.5rem;
-}
-
-/*
-#projects * {
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-}
-*/
-
-section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section-body {
-    width: 75%;
-}
-
-
-/* Navbar */
-#navbar {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    top: 0;
-    height: 3.5rem;
-    width: 100%;
-    background-color: #95ddf3;
-}
-
-#navbar * {
-    display: inline;
-    margin-left: auto;
-}
-
-.navbar-btn a {
-    display: block;
-    padding: 1rem;
-    color: #344A53;
-    font-size: 1.1rem;
-    text-decoration: none;
-}
-
-.navbar-btn a:hover {
-    background-color: #2490B2;
-}
-
-
-#footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #95ddf3;
-    width: 100%;
-    margin-top: 3rem;
-    font-size: 1.1rem;
-    color: #344A53
-}
-
-
-
-
-h3 {
-    font-size: 1.5rem;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
-    font-size: 1.2rem;
+  font-size: 20px;
 }
 
-li {
-    font-size: 1.2rem;
+section {
+  padding: 100px;
+}
+
+#logo {
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.section-header-container {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("./images/starry-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text {
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-text-main {
+  margin-bottom: 0px;
+  font-size: 50px;
+}
+
+.header-text-sub {
+  font-size: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-section {
+  padding: 50px;
+  width: 80%;
+  display: flex;
+}
+
+.about-me-experience * {
+  margin-left: 50px;
+  list-style-type: circle !important;
+}
+
+.pic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-picture {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+#projects {
+  background-color: #212121;
+}
+
+.projects {
+  display: grid;
+  width: 100%;
+
+  gap: 50px;
+}
+
+@media (min-width: 600px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  box-shadow: rgb(147, 145, 145) 0px 5px 15px;
+}
+
+.icon {
+  color: black;
+  margin-right: 20px;
+}
+
+.icon-container {
+  font-size: 40px;
+}
+
+.contact-icons {
+  font-size: 40px;
+  padding-left: 20px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
