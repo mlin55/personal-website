@@ -54,23 +54,25 @@ function App() {
               <b>About me</b>
             </h2>
             <div className="about-me-section">
-              <div style={{ paddingRight: "200px" }}>
+              <div className="about-me-text">
                 <p>
-                  I'm a junior studying computer science at the University of
-                  Texas at Austin, as well as an aspiring software engineer. I'm
-                  interested in full-stack web development and leveraging my
+                  I'm a junior pursuing a computer science major and a business minor at the University of Texas at Austin. I'm interested in all things software engineering and leveraging my
                   skills to build fun and challenging projects.
                 </p>
                 <p>Previously I've worked at:</p>
                 <ul className="about-me-experience">
                   <li>
-                    Nelnet, building REST API endpoints on the backend and
+                    <b style={{ marginLeft: "0" }}>Capital One</b>, developing an external event gateway capable of handling over 1 million third party events per day
+                  </li>
+                </ul>
+                <ul className="about-me-experience">
+                  <li>
+                    <b style={{ marginLeft: "0" }}>Nelnet</b>, building REST API endpoints on the backend and
                     developing responsive webpages on the frontend
                   </li>
                 </ul>
                 <p>
-                  In my free time, I enjoy wandering the streets of Austin,
-                  playing cello, and reading fantasy novels.
+                  In my free time, I enjoy rock climbing, reading, playing guitar, and wandering the streets of Austin.
                 </p>
               </div>
               <div className="pic-container">

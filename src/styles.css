@@ -41,6 +41,8 @@ section {
 .header-text-main {
   margin-bottom: 0px;
   font-size: 50px;
+
+  text-align: center;
 }
 
 .header-text-sub {
@@ -60,8 +62,13 @@ section {
   display: flex;
 }
 
+.about-me-text {
+  padding-right: 200px;
+}
+
 .about-me-experience * {
   margin-left: 50px;
+  font-size: large;
   list-style-type: circle !important;
 }
 
@@ -86,6 +93,25 @@ section {
   width: 100%;
 
   gap: 50px;
+}
+
+@media (max-width: 1400px) {
+  #about-me {
+    padding: 0px;
+  }
+
+  .about-me-section {
+    padding: 0px;
+    flex-direction: column-reverse;
+  }
+
+  .about-me-text {
+    padding-right: 0px;
+  }
+
+  .pic-container {
+    margin: 50px;
+  }
 }
 
 @media (min-width: 600px) {
