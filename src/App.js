@@ -56,7 +56,7 @@ function App() {
             <div className="about-me-section">
               <div className="about-me-text">
                 <p>
-                  I'm a junior pursuing a computer science major and a business minor at the University of Texas at Austin. I'm interested in all things software engineering and leveraging my
+                  I'm a rising senior pursuing a double major in computer science and mathematics at the University of Texas at Austin. I'm interested in all things software engineering and leveraging my
                   skills to build fun and challenging projects.
                 </p>
                 <p>Previously I've worked at:</p>
